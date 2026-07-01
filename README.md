@@ -1,6 +1,6 @@
 # Candidate Discovery Engine
 
-🚀 **Live Demo:** https://huggingface.co/spaces/Anna200616/candidate-discovery-engine
+**Live Demo:** https://huggingface.co/spaces/Anna200616/candidate-discovery-engine
 
 AI-powered candidate ranking system for the INDIA RUNS Data & AI Challenge 2026.
 ---
