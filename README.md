@@ -50,12 +50,15 @@ pip install -r requirements.txt
 
 ## Current Status
 
-* [x] Project structure created
-* [ ] Dataset exploration
-* [ ] Feature extraction
-* [ ] Semantic ranking
-* [ ] Honeypot detection
-* [ ] Final submission generation
+## Current Status
+
+- [x] Dataset exploration
+- [x] Feature extraction
+- [x] Semantic ranking pipeline
+- [x] Behavioral signal scoring
+- [x] Honeypot detection
+- [x] Submission generation
+- [x] Streamlit sandbox
 
 ## Challenge
 
