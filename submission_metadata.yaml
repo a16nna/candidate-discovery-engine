@@ -1,0 +1,59 @@
+team_name: "anna-mariya-martin"
+
+primary_contact:
+  name: "Anna Mariya Martin"
+  email: "anna.mariya@woxsen.edu.in"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Anna Mariya Martin"
+    email: "anna.mariya@woxsen.edu.in"
+    role: "Solo participant — ML Engineering, Backend, Data"
+
+github_repo: "https://github.com/a16nna/candidate-discovery-engine"
+
+sandbox_link: "https://huggingface.co/spaces/a16nna/candidate-discovery-engine"
+
+reproduce_command: "python rank.py --candidates ./data/raw/candidates.jsonl --out ./outputs/submission.csv"
+
+compute:
+  platform: "Local Windows PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11.x"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "Claude (Anthropic)"
+  - "GitHub Copilot"
+
+ai_usage_summary: |
+  Used Claude for architecture planning, algorithm design discussion, and code review.
+  Used GitHub Copilot for autocomplete. All candidate data was processed locally —
+  no candidate records were sent to any external AI service. All engineering decisions,
+  scoring weights, and design choices are my own.
+
+methodology_summary: |
+  Hybrid ranking system with five structured scoring components and a multiplicative
+  behavioral signal modifier. Honeypot pre-filter removes impossible timelines,
+  extreme keyword stuffers, and the JD's explicit trap (non-technical titles with
+  AI keywords stuffed into skills but no matching career history). Semantic fit (28%)
+  uses TF-IDF cosine similarity. Skills fit (27%) weights endorsed, duration-verified
+  skills higher than unverified ones. Career fit (25%) penalizes pure-consulting
+  careers and rewards production ML evidence in career descriptions. Experience (12%)
+  peaks at 6-8 years per the JD's stated ideal range. Education (8%) uses the
+  dataset's tier field. Behavioral modifier (multiplicative, 0.5x-1.25x) down-weights
+  candidates inactive 6+ months or with low recruiter response rates, per the JD's
+  explicit guidance that "perfect-on-paper but unreachable" candidates aren't
+  actually hireable. Runtime ~100s for 100K candidates on CPU.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
