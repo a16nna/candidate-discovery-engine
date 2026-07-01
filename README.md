@@ -4,6 +4,7 @@
 
 AI-powered candidate ranking system for the INDIA RUNS Data & AI Challenge 2026.
 ---
+
 title: Candidate Discovery Engine
 emoji: 🔍
 colorFrom: blue
@@ -12,6 +13,7 @@ sdk: streamlit
 sdk_version: 1.58.0
 app_file: app.py
 pinned: false
+
 ---
 
 # Candidate Discovery Engine
