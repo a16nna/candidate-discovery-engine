@@ -1,7 +1,19 @@
+---
+title: Candidate Discovery Engine
+emoji: 🔍
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+sdk_version: 1.58.0
+app_file: app.py
+pinned: false
+---
+
 # Candidate Discovery Engine
 
 AI-powered candidate ranking system built for the INDIA RUNS Data & AI Challenge.
 
+...
 ## Overview
 
 This project ranks candidates for a given job description using a hybrid approach that combines:
@@ -28,7 +40,6 @@ candidate-discovery-engine/
 ├── README.md
 └── requirements.txt
 ```
-
 ## Setup
 
 ```bash
